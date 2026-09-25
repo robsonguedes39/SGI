@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Manual Oficial do Usuário do SGI - Sistema de Gestão de Intervenções e Obras da Câmara Municipal de Assis Chateaubriand">
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <title>Manual do Usuário — SGI Gestão de Intervenções e Obras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       PALETA OFICIAL DO SGI (UiPaleta.vb) & TEMA WINDOWS 11
+       ========================================================================== */
+    :root {
+      /* Cores Institucionais */
+      --azul-primario: #005fb8;
+      --azul-hover: #0054a5;
+      --azul-acento: #0078d7;
+      --navy-titulo: #0c1c2c;
+      --navy-topo: #081420;
+
+      /* Tons de Superfície e Conteúdo */
+      --pagina-fundo: #f8f9fa;
+      --cartao-fundo: #ffffff;
+      --traco-borda: #e5e5e5;
+      --traco-suave: #eeeeee;
+      --texto-primario: #1a1a1a;
+      --texto-secundario: #555555;
+      --texto-suave: #777777;
+
+      /* Badges & Alertas de Negócio */
+      --sucesso-fundo: #e8f5e9;
+      --sucesso-texto: #1b5e20;
+      --sucesso-borda: #c8e6c9;
+
+      --alerta-fundo: #fff8e1;
+      --alerta-texto: #b76e00;
+      --alerta-borda: #ffe082;
+
+      --perigo-fundo: #fde8e8;
+      --perigo-texto: #c42b1c;
+      --perigo-borda: #f8b4b4;
+
+      --info-fundo: #eff6fc;
+      --info-texto: #004b87;
+      --info-borda: #c7e0f4;
+
+      /* Grids & Linhas */
+      --grade-linha: #ededed;
+      --grade-alternada: #fafafa;
+      --grade-selecao: #eff6fc;
+
+      /* Sombras & Formas */
+      --sombra-cartao: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+      --sombra-elevada: 0 4px 14px rgba(0, 0, 0, 0.07);
+      --raio-borda: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background-color: var(--pagina-fundo);
+      color: var(--texto-primario);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+    }
+
+    /* ==========================================================================
+       CONTAINER STICKY INTEGRADO (CABEÇALHO + SUBNAV UNIFICADOS)
+       ========================================================================== */
+    .sticky-header-container {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+      background-color: #ffffff;
+    }
+
+    /* Cabeçalho Topo Dark Navy */
+    .top-header {
+      background: linear-gradient(135deg, #0c1c2c 0%, #153452 100%);
+      color: #ffffff;
+      padding: 14px 28px;
+      border-bottom: 2px solid var(--azul-primario);
+    }
+
+    .top-header-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+    }
+
+    .brand-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .brand-text h1 {
+      font-size: 17.5px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .brand-text p {
+      font-size: 11.5px;
+      color: #c6d2de;
+      margin-top: 1px;
+    }
+
+    .search-wrapper {
+      position: relative;
+      min-width: 260px;
+      max-width: 360px;
+      flex: 1;
+    }
+
+    .search-input {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 7px 12px 7px 34px;
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 12.5px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .search-input::placeholder {
+      color: #c6d2de;
+    }
+
+    .search-input:focus {
+      background-color: rgba(255, 255, 255, 0.22);
+      border-color: #4ca6ff;
+      box-shadow: 0 0 0 3px rgba(76, 166, 255, 0.25);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      fill: #c6d2de;
+      pointer-events: none;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-header {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-header:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* ==========================================================================
+       SUBNAV BAR INTERATIVA (100% VISÍVEL, SEM CORTES, COM SCROLLSPY)
+       ========================================================================== */
+    .subnav-bar {
+      background-color: #ffffff;
+      border-bottom: 1px solid var(--traco-borda);
+      padding: 8px 24px;
+    }
+
+    .subnav-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .subnav-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--navy-titulo);
+      white-space: nowrap;
+    }
+
+    .subnav-label svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--azul-primario);
+    }
+
+    .subnav-pills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 8px;
+      flex: 1;
+    }
+
+    .subnav-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--texto-secundario);
+      text-decoration: none;
+      background-color: #f1f3f5;
+      border: 1px solid #e2e5e9;
+      transition: all 0.15s ease-in-out;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .pill-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      background-color: rgba(0, 0, 0, 0.08);
+      color: var(--texto-primario);
+      border-radius: 50%;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .subnav-pill:hover {
+      background-color: #e5e9ef;
+      color: var(--navy-titulo);
+      border-color: #cbd3de;
+      transform: translateY(-1px);
+    }
+
+    .subnav-pill.active {
+      background-color: var(--azul-primario) !important;
+      color: #ffffff !important;
+      border-color: var(--azul-primario) !important;
+      box-shadow: 0 2px 5px rgba(0, 95, 184, 0.28);
+    }
+
+    .subnav-pill.active .pill-num {
+      background-color: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    /* ==========================================================================
+       LAYOUT PRINCIPAL DO MANUAL
+       ========================================================================== */
+    .container {
+      max-width: 1280px;
+      margin: 24px auto;
+      padding: 0 28px;
+    }
+
+    /* Banner Informativo */
+    .hero-banner {
+      background-color: #ffffff;
+      border: 1px solid var(--traco-borda);
+      border-left: 5px solid var(--azul-primario);
+      border-radius: var(--raio-borda);
+      padding: 22px 26px;
+      margin-bottom: 26px;
+      box-shadow: var(--sombra-cartao);
+    }
+
+    .hero-banner h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--navy-titulo);
+      margin-bottom: 6px;
+    }
+
+    .hero-banner p {
+      font-size: 13.5px;
+      color: var(--texto-secundario);
+      max-width: 1000px;
+      line-height: 1.6;
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 9px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+
+    .badge-blue {
+      background-color: var(--info-fundo);
+      color: var(--info-texto);
+      border: 1px solid var(--info-borda);
+    }
+
+    .badge-green {
+      background-color: var(--sucesso-fundo);
+      color: var(--sucesso-texto);
+      border: 1px solid var(--sucesso-borda);
+    }
+
+    /* Seções e Cartões */
+    .manual-section {
+      margin-bottom: 40px;
+      scroll-margin-top: 155px;
+      /* Offset perfeito para o cabeçalho sticky */
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--navy-titulo);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--traco-borda);
+    }
+
+    .section-number {
+      background-color: var(--azul-primario);
+      color: #ffffff;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13.5px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .card {
+      background-color: var(--cartao-fundo);
+      border: 1px solid var(--traco-borda);
+      border-radius: var(--raio-borda);
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      box-shadow: var(--sombra-cartao);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--navy-titulo);
+    }
+
+    .screen-tag {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--azul-primario);
+      background-color: var(--info-fundo);
+      padding: 3px 9px;
+      border-radius: 4px;
+      border: 1px solid var(--info-borda);
+    }
+
+    /* Mensagens de Alerta / Caixas Informativas */
+    .alert-box {
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 14px 0;
+      font-size: 13px;
+      line-height: 1.55;
+      display: flex;
+      gap: 12px;
+      border-left: 4px solid;
+    }
+
+    .alert-box.info {
+      background-color: var(--info-fundo);
+      color: var(--info-texto);
+      border-color: var(--azul-primario);
+    }
+
+    .alert-box.warning {
+      background-color: var(--alerta-fundo);
+      color: var(--alerta-texto);
+      border-color: #ffa000;
+    }
+
+    .alert-box.danger {
+      background-color: var(--perigo-fundo);
+      color: var(--perigo-texto);
+      border-color: var(--perigo-texto);
+    }
+
+    .alert-box.success {
+      background-color: var(--sucesso-fundo);
+      color: var(--sucesso-texto);
+      border-color: #2e7d32;
+    }
+
+    .alert-title {
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    /* Tabelas de Dados e Regras */
+    .table-container {
+      overflow-x: auto;
+      margin: 14px 0;
+      border: 1px solid var(--grade-linha);
+      border-radius: 6px;
+    }
+
+    table.manual-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    table.manual-table th {
+      background-color: #f8fafc;
+      color: var(--navy-titulo);
+      font-weight: 600;
+      padding: 9px 13px;
+      border-bottom: 2px solid var(--grade-linha);
+      white-space: nowrap;
+    }
+
+    table.manual-table td {
+      padding: 9px 13px;
+      border-bottom: 1px solid var(--grade-linha);
+      color: var(--texto-primario);
+    }
+
+    table.manual-table tr:nth-child(even) {
+      background-color: var(--grade-alternada);
+    }
+
+    table.manual-table tr:hover {
+      background-color: var(--grade-selecao);
+    }
+
+    .rule-badge {
+      display: inline-block;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11.5px;
+      font-weight: 700;
+      background-color: #e0f2fe;
+      color: #0369a1;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    /* Fluxo de Etapas */
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .step-circle {
+      width: 30px;
+      height: 30px;
+      background-color: #ffffff;
+      border: 2px solid var(--azul-primario);
+      color: var(--azul-primario);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 13px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-content {
+      background-color: #fafafa;
+      border: 1px solid var(--traco-borda);
+      border-radius: 6px;
+      padding: 12px 16px;
+      flex: 1;
+    }
+
+    .step-content h4 {
+      font-size: 14px;
+      color: var(--navy-titulo);
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .step-content p {
+      font-size: 12.5px;
+      color: var(--texto-secundario);
+      line-height: 1.5;
+    }
+
+    /* Teclas de Atalho (KBD) */
+    kbd {
+      background-color: #f3f4f6;
+      border: 1px solid #d1d5db;
+      border-bottom: 2px solid #9ca3af;
+      border-radius: 4px;
+      padding: 2px 5px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    /* FAQ Box */
+    .faq-item {
+      background-color: #fafafa;
+      border: 1px solid var(--traco-borda);
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+    }
+
+    .faq-question {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy-titulo);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .faq-answer {
+      font-size: 13px;
+      color: var(--texto-secundario);
+      margin-top: 6px;
+      line-height: 1.6;
+    }
+
+    /* Botão Flutuante Voltar ao Topo */
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 28px;
+      background-color: var(--azul-primario);
+      color: #ffffff;
+      border: none;
+      border-radius: 30px;
+      padding: 9px 15px;
+      font-size: 12px;
+      font-weight: 600;
+      display: none;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 95, 184, 0.35);
+      z-index: 999;
+      transition: all 0.2s ease;
+    }
+
+    .back-to-top:hover {
+      background-color: var(--azul-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 95, 184, 0.45);
+    }
+
+    .back-to-top svg {
+      width: 14px;
+      height: 14px;
+      fill: #ffffff;
+    }
+
+    /* Rodapé */
+    .manual-footer {
+      border-top: 1px solid var(--traco-borda);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 12px;
+      color: var(--texto-suave);
+      margin-top: 36px;
+    }
+
+    @media print {
+
+      .sticky-header-container,
+      .header-actions,
+      .back-to-top {
+        display: none !important;
+      }
+
+      body {
+        background-color: #ffffff !important;
+      }
+
+      .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+
+      .card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       CABEÇALHO UNIFICADO E STICKY (NUNCA CORTA TÓPICOS E NÃO CONFLITA COM O SGI)
+       ======================================================================== -->
+  <div class="sticky-header-container">
+    <!-- Topo Institucional -->
+    <header class="top-header">
+      <div class="top-header-content">
+        <div class="brand-area">
+          <div class="brand-icon"><img src="data:image/png;base64,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" alt="Câmara Municipal"></div>
+          <div class="brand-text">
+            <h1>Manual do Usuário — SGI Gestão de Obras</h1>
+            <p>Câmara Municipal de Assis Chateaubriand • Versão 1.1.0.0 (.NET 10)</p>
+          </div>
+        </div>
+
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+          <input type="text" id="manualSearch" class="search-input"
+            placeholder="Pesquisar manual (ex: medição, ART, CND)..." autocomplete="off">
+        </div>
+
+        <div class="header-actions">
+          <button class="btn-header" onclick="window.print()">
+            <svg width="13" height="13" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+              <path
+                d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z" />
+            </svg>
+            Imprimir
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Barra de Tópicos Interativa (11 Seções 100% Visíveis e com Rastreamento) -->
+    <nav class="subnav-bar">
+      <div class="subnav-content">
+        <div class="subnav-label">
+          <!--<svg viewBox="0 0 16 16">
+            <path
+              d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+            <path d="M4 4h8v1H4V4zm0 3h8v1H4V7zm0 3h5v1H4v-1z" />
+          </svg>-->
+          <!-- <span>Tópicos:</span> -->
+        </div>
+        <div class="subnav-pills-list">
+          <a href="#introducao" class="subnav-pill active"><span class="pill-num">1</span> Acesso & Login</a>
+          <a href="#como-navegar" class="subnav-pill"><span class="pill-num">2</span> Navegação & Entidade</a>
+          <a href="#passo-a-passo" class="subnav-pill"><span class="pill-num">3</span> Passo a Passo</a>
+          <a href="#intervencoes" class="subnav-pill"><span class="pill-num">4</span> Intervenções</a>
+          <a href="#pessoas-rt" class="subnav-pill"><span class="pill-num">5</span> Pessoas & RT</a>
+          <a href="#leis-atos" class="subnav-pill"><span class="pill-num">6</span> Leis & Atos</a>
+          <a href="#planilhas" class="subnav-pill"><span class="pill-num">7</span> Planilhas</a>
+          <a href="#matricula-inss" class="subnav-pill"><span class="pill-num">8</span> Matrícula INSS</a>
+          <a href="#acompanhamento" class="subnav-pill"><span class="pill-num">9</span> Acompanhamento</a>
+          <a href="#gerador-simam" class="subnav-pill"><span class="pill-num">10</span> Gerador SIM-AM</a>
+          <a href="#regras-bloqueios" class="subnav-pill"><span class="pill-num">11</span> Regras TCE-PR</a>
+          <a href="#faq" class="subnav-pill"><span class="pill-num">12</span> Dúvidas (FAQ)</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+
+    <!-- BANNER HERO -->
+    <div class="hero-banner">
+      <h2>Manual de Instruções e Procedimentos do Usuário</h2>
+      <p>
+        Este manual orienta a equipe da Câmara Municipal no cadastramento, acompanhamento fiscal e prestação de contas
+        de todas as intervenções físicas e obras de engenharia. O sistema foi preparado para cumprir rigorosamente as
+        normas de envio do <strong>SIM-AM do Tribunal de Contas do Estado do Paraná (TCE-PR)</strong>.
+      </p>
+      <div class="hero-badges">
+        <span class="badge badge-blue">✓ Homologado com o SIM-AM TCE-PR</span>
+        <span class="badge badge-green">✓ Sistema em Produção</span>
+        <span class="badge badge-blue">✓ Validações Automáticas Ativas</span>
+      </div>
+    </div>
+
+    <!-- SEÇÃO 1: INTRODUÇÃO & ACESSO -->
+    <section id="introducao" class="manual-section">
+      <h3 class="section-title"><span class="section-number">1</span> Introdução, Login e Acesso Seguro</h3>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Como Entrar no Sistema</span>
+          <span class="screen-tag">Tela de Login e Verificação</span>
+        </div>
+        <p>
+          O acesso ao SGI é individual por operador. Para garantir a segurança dos registros e a integridade das
+          informações prestadas aos órgãos de controle:
+        </p>
+        <ol
+          style="margin-left: 22px; margin-top: 10px; font-size: 13.5px; line-height: 1.8; color: var(--texto-secundario);">
+          <li>Informe seu <strong>Usuário</strong> e sua <strong>Senha pessoal</strong> na tela inicial.</li>
+          <li>Após a validação da senha, o sistema enviará um <strong>Código de Confirmação (2FA)</strong> de 6 dígitos
+            para o seu e-mail funcional cadastrado.</li>
+          <li>Digite o código recebido na tela e clique em <strong>Confirmar</strong>. O código é válido por 10 minutos.
+          </li>
+          <li>Ao concluir o login, a tela principal do SGI será aberta com o seu nome identificado no rodapé do menu
+            lateral.</li>
+        </ol>
+
+        <div class="alert-box info">
+          <div>
+            <div class="alert-title">Dica de Segurança</div>
+            Nunca compartilhe sua senha com terceiros. Todas as inclusões, edições e alterações realizadas no sistema
+            ficam registradas com seu usuário, data e horário para fins de auditoria interna.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: NAVEGAÇÃO E DADOS DA ENTIDADE -->
+    <section id="como-navegar" class="manual-section">
+      <h3 class="section-title"><span class="section-number">2</span> Navegação no Sistema e Dados da Entidade</h3>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Menu Lateral e Área de Trabalho em Abas</span>
+          <span class="screen-tag">Navegação Principal</span>
+        </div>
+        <p>
+          O SGI foi construído para proporcionar produtividade e organização ao operador, permitindo manter múltiplas consultas e cadastros abertos simultaneamente sem perdas de dados:
+        </p>
+        <ul
+          style="margin-left: 22px; margin-top: 8px; font-size: 13.5px; line-height: 1.8; color: var(--texto-secundario);">
+          <li><strong>Menu Lateral Fixo (Dark Navy):</strong> Localizado à esquerda, agrupa todas as rotinas em seções bem definidas (<em>Cadastros</em> e <em>Utilitários</em>), além de identificar o usuário logado e a versão do sistema no rodapé.</li>
+          <li><strong>Abertura Dinâmica de Abas:</strong> Clique em qualquer opção do menu para carregar a tela correspondente em uma nova aba na barra superior.</li>
+          <li><strong>Alternância entre Telas:</strong> Você pode alternar livremente entre as abas abertas. O sistema preserva automaticamente os dados preenchidos e a posição de rolagem de cada tela.</li>
+          <li><strong>Fechamento Seguro:</strong> Clique no botão <strong>X</strong> de qualquer aba para fechá-la após concluir a rotina.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Dados da Entidade (Configurações Centrais do TCE-PR)</span>
+          <span class="screen-tag">Utilitários → Dados da Entidade</span>
+        </div>
+        <p>
+          Esta tela centraliza os parâmetros institucionais que identificam a Câmara Municipal perante o Tribunal de Contas do Estado do Paraná (TCE-PR). Por envolver dados fundamentais de prestação de contas, o acesso é restrito aos usuários com perfil de <strong>Administrador</strong>:
+        </p>
+
+        <div class="table-container" style="margin-top: 14px;">
+          <table class="manual-table">
+            <thead>
+              <tr>
+                <th style="width: 200px;">Campo</th>
+                <th>O que representa</th>
+                <th>Finalidade nas Remessas do TCE-PR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Nome da Instituição</strong></td>
+                <td>Razão social oficial do órgão legislativo (ex: <em>Câmara Municipal de Assis Chateaubriand</em>).</td>
+                <td>Identificação nominal da entidade nos cabeçalhos e relatórios oficiais.</td>
+              </tr>
+              <tr>
+                <td><strong>CNPJ</strong></td>
+                <td>Cadastro Nacional da Pessoa Jurídica da Câmara.</td>
+                <td>Validação fiscal do ente público perante a Receita Federal e o Tribunal.</td>
+              </tr>
+              <tr>
+                <td><strong>idPessoa (Câmara)</strong></td>
+                <td>Código numérico exclusivo da Câmara no cadastro do TCE-PR.</td>
+                <td><strong>Chave obrigatória em todos os arquivos:</strong> vincula formalmente todas as obras, contratos, medições e certidões à Câmara Municipal.</td>
+              </tr>
+              <tr>
+                <td><strong>idPessoa da Prefeitura</strong></td>
+                <td>Código da Prefeitura Municipal no cadastro do TCE-PR.</td>
+                <td><strong>Origem das Ações do PPA:</strong> como os programas e ações orçamentárias de obras originam-se do PPA do Poder Executivo, este código garante a vinculação legal das ações no SIM-AM.</td>
+              </tr>
+              <tr>
+                <td><strong>Código Inicial da Atoteca</strong></td>
+                <td>Número-base da numeração de leis e atos (configurado como <code>450900</code>).</td>
+                <td>Define o ponto de partida do <code>cdControleLeiAto</code> para que os atos de obras não colidam com a numeração dos outros setores da entidade.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="alert-box info" style="margin-top: 12px;">
+          <div>
+            <div class="alert-title">Configuração Única de Implantação</div>
+            Esses dados são definidos durante a implantação inicial do SGI e permanecem válidos para todos os exercícios fiscais. Somente devem ser alterados caso o Tribunal de Contas modifique os códigos de cadastro do município.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Teclas de Atalho e Facilidades de Digitação</span>
+        </div>
+        <p>
+          Para agilizar a digitação de cadastros extensos, utilize as teclas de atalho:
+        </p>
+        <div class="table-container">
+          <table class="manual-table">
+            <thead>
+              <tr>
+                <th style="width: 140px;">Tecla</th>
+                <th style="width: 200px;">Onde Usar</th>
+                <th>O que acontece</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><kbd>F2</kbd></td>
+                <td>Campos com Lupa 🔍</td>
+                <td>Abre a tela de pesquisa rápida (buscar intervenção, pessoa, ato legal, município, etc.).</td>
+              </tr>
+              <tr>
+                <td><kbd>F2</kbd></td>
+                <td>Campos de Data</td>
+                <td>Abre o calendário em tela para selecionar o dia com o mouse (opcional).</td>
+              </tr>
+              <tr>
+                <td><kbd>Enter</kbd></td>
+                <td>Telas de Busca</td>
+                <td>Executa a pesquisa ou seleciona o item destacado na grade de resultados.</td>
+              </tr>
+              <tr>
+                <td><kbd>Esc</kbd></td>
+                <td>Telas de Busca / Janelas</td>
+                <td>Fecha a tela de pesquisa e cancela a seleção, retornando ao cadastro.</td>
+              </tr>
+              <tr>
+                <td><kbd>Tab</kbd></td>
+                <td>Geral</td>
+                <td>Avança para o próximo campo do formulário.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Como Preencher Datas de Forma Rápida</span>
+          <span class="screen-tag">Preenchimento Inteligente</span>
+        </div>
+        <p>
+          Você não precisa digitar as barras <code>/</code> nem o ano inteiro na maioria dos casos. O sistema completa a
+          data automaticamente ao você pressionar <kbd>Tab</kbd>:
+        </p>
+        <div class="table-container">
+          <table class="manual-table">
+            <thead>
+              <tr>
+                <th>Se você digitar</th>
+                <th>Ao sair do campo, vira:</th>
+                <th>Como o sistema entende</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>5</code></td>
+                <td><code>05 / Mês Atual / Ano Atual</code></td>
+                <td>Assume o dia 5 do mês e ano em que estamos.</td>
+              </tr>
+              <tr>
+                <td><code>0510</code></td>
+                <td><code>05 / 10 / Ano Atual</code></td>
+                <td>Assume 5 de outubro do ano corrente.</td>
+              </tr>
+              <tr>
+                <td><code>051025</code></td>
+                <td><code>05 / 10 / 2025</code></td>
+                <td>Assume 5 de outubro de 2025.</td>
+              </tr>
+              <tr>
+                <td><code>3102</code></td>
+                <td><em>Campo limpo (vazio)</em></td>
+                <td>Datas inexistentes (ex: 31 de fevereiro) são rejeitadas para evitar erros de auditoria.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: PASSO A PASSO DA OBRA -->
+    <section id="passo-a-passo" class="manual-section">
+      <h3 class="section-title"><span class="section-number">3</span> Ciclo de Vida da Obra (Roteiro Passo a Passo)</h3>
+
+      <div class="card">
+        <p style="margin-bottom: 16px; font-size: 14px; color: var(--texto-secundario);">
+          Para que o envio ao Tribunal ocorra sem inconsistências, os dados de uma nova obra devem ser cadastrados na
+          seguinte ordem recomendada:
+        </p>
+
+        <div class="steps-list">
+          <div class="step-item">
+            <div class="step-circle">1</div>
+            <div class="step-content">
+              <h4>Cadastrar a Intervenção</h4>
+              <p>Menu <strong>Cadastros → Intervenções</strong>: Registre o título da obra, descrição, tipo
+                (reforma/ampliação/construção), datas estimadas e valor previsto.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">2</div>
+            <div class="step-content">
+              <h4>Cadastrar Pessoas e Profissionais</h4>
+              <p>Menu <strong>Cadastros → Pessoas</strong>: Cadastre o engenheiro fiscal, os projetistas e a empresa
+                construtora. <em>Atenção:</em> cadastre o número do conselho (CREA/CAU/CFT) na aba "Outros Documentos".
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">3</div>
+            <div class="step-content">
+              <h4>Vincular a Responsabilidade Técnica (ART / RRT)</h4>
+              <p>Menu <strong>Cadastros → Responsáveis Técnicos</strong>: Vincule o engenheiro à obra informando o
+                número da ART/RRT e o tipo de atuação técnica.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">4</div>
+            <div class="step-content">
+              <h4>Vincular o Bem ou Imóvel da Obra</h4>
+              <p>Menu <strong>Cadastros → Bens da Intervenção</strong>: Informe o código do patrimônio público onde a
+                obra será realizada (ex: Prédio da Câmara).</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">5</div>
+            <div class="step-content">
+              <h4>Registrar as Leis e Atos da Obra</h4>
+              <p>Menu <strong>Cadastros → Leis e Atos</strong>: Cadastre a Lei Autorizativa, Decretos, Editais e Termos
+                Contratuais vinculados à intervenção.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">6</div>
+            <div class="step-content">
+              <h4>Cadastrar a Planilha Orçamentária</h4>
+              <p>Menu <strong>Cadastros → Planilhas de Orçamento</strong>: Lance a Planilha Base informando a data-base,
+                o valor orçado e o ato legal do orçamento.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">7</div>
+            <div class="step-content">
+              <h4>Informar a Matrícula do INSS (CNO / CEI)</h4>
+              <p>Menu <strong>Cadastros → Matrículas INSS</strong>: Registre o número da matrícula da obra na Receita
+                Federal e adicione as certidões CND conforme forem emitidas.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">8</div>
+            <div class="step-content">
+              <h4>Lançar os Acompanhamentos e Medições Mensais</h4>
+              <p>Menu <strong>Cadastros → Acompanhamentos</strong>: Lance todo mês o percentual executado, anexe o
+                boletim de medição ou registre eventos de paralisação e conclusão definitiva.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">9</div>
+            <div class="step-content">
+              <h4>Vincular os Empenhos da Obra</h4>
+              <p>Menu <strong>Cadastros → Empenhos da Intervenção</strong>: vincule os empenhos da obra (número, data
+                e, quando houver, a entidade de origem) à intervenção. O vínculo <strong>não é obrigatório</strong> — se
+                o sistema de contabilidade já faz essa vinculação para o Tribunal, não é preciso repetir aqui. A data do
+                empenho determina em qual competência o vínculo entra na remessa.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">10</div>
+            <div class="step-content">
+              <h4>Gerar a Remessa Mensal SIM-AM Obras (TCE-PR)</h4>
+              <p>Menu <strong>Utilitários → Gerar SIM-AM Obras</strong>: Ao final de cada mês (competência), execute a
+                pré-conferência automática das obras e gere o arquivo compactado (.zip) com os dados prontos para
+                transmissão ao Tribunal de Contas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4: INTERVENÇÕES -->
+    <section id="intervencoes" class="manual-section">
+      <h3 class="section-title"><span class="section-number">4</span> Cadastro de Intervenções (Obras)</h3>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Identificação da Obra Pública</span>
+          <span class="screen-tag">Cadastros → Intervenções</span>
+        </div>
+        <p>
+          A tela de intervenções lista todas as obras da Câmara e permite filtrar por status, ano ou descrição. Ao
+          clicar em <strong>Adicionar</strong> ou <strong>Editar</strong>:
+        </p>
+        <ul
+          style="margin-left: 22px; margin-top: 10px; font-size: 13.5px; line-height: 1.8; color: var(--texto-secundario);">
+          <li><strong>Título da Intervenção:</strong> Nome resumido da obra (ex: <em>"Reforma da Cobertura do
+              Plenário"</em>).</li>
+          <li><strong>Descrição Detalhada:</strong> Objeto completo conforme consta no edital de licitação ou projeto
+            básico.</li>
+          <li><strong>Classificação e Tipo:</strong> Indique se é Obra Nova, Reforma ou Ampliação.</li>
+          <li><strong>Regime de Execução:</strong> Indique se a obra é feita por servidores do município (Execução
+            Direta) ou por empresa contratada por licitação (Execução Indireta).</li>
+          <li><strong>Previsão de Início e Término:</strong> Datas estimadas de cronograma físico.</li>
+          <li><strong>Unidade de Medida:</strong> Unidade principal (ex: Metros quadrados, quilômetros, unidades).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5: PESSOAS E RESPONSABILIDADE TÉCNICA -->
+    <section id="pessoas-rt" class="manual-section">
+      <h3 class="section-title"><span class="section-number">5</span> Pessoas e Responsáveis Técnicos (ART / RRT)</h3>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Cadastro de Pessoas (Físicas e Jurídicas)</span>
+          <span class="screen-tag">Cadastros → Pessoas</span>
+        </div>
+        <p>
+          Este cadastro armazena os dados dos profissionais (engenheiros, arquitetos, fiscais) e das pessoas jurídicas
+          (empreiteiras, escritórios de projeto).
+        </p>
+
+        <div class="alert-box warning">
+          <div>
+            <div class="alert-title">Atenção ao Cadastrar Engenheiros e Fiscais</div>
+            Para que uma pessoa possa assinar como responsável técnico de uma obra ou boletim de medição, ela
+            <strong>obrigatoriamente precisa ter seu registro profissional cadastrado</strong> na aba <strong>Outros
+              Documentos</strong> da tela de Pessoas. Cadastre:
+            <strong>CREA</strong>, <strong>CAU</strong>, <strong>CTF</strong> ou <strong>CFTA</strong>, informando o
+            número e a UF (ex: CREA-PR).
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Vinculação de Responsáveis Técnicos</span>
+          <span class="screen-tag">Cadastros → Responsáveis Técnicos</span>
+        </div>
+        <p>
+          Associa o engenheiro ou arquiteto à intervenção específica:
+        </p>
+        <ul
+          style="margin-left: 22px; margin-top: 10px; font-size: 13.5px; line-height: 1.8; color: var(--texto-secundario);">
+          <li>Selecione a Intervenção desejada no topo da tela.</li>
+          <li>Clique em <strong>Adicionar</strong> e selecione a pessoa através da busca (<kbd>F2</kbd>).</li>
+          <li>Selecione o tipo de documento de responsabilidade: <strong>1 - ART</strong> (CREA) ou <strong>2 -
+              RRT/TRT</strong> (CAU/CFT).</li>
+          <li>Informe o <strong>Número da ART</strong> (o sistema valida se a numeração possui os dígitos obrigatórios
+            conforme padrão do CREA).</li>
+          <li>Indique o tipo de atuação (ex: Fiscalização, Execução da Obra, Projeto Arquitetônico, Orçamento).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 6: LEIS E ATOS -->
+    <section id="leis-atos" class="manual-section">
+      <h3 class="section-title"><span class="section-number">6</span> Leis e Atos Autorizativos da Obra (Atoteca)</h3>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Documentação Legal e Numeração da Atoteca</span>
+          <span class="screen-tag">Cadastros → Leis e Atos</span>
+        </div>
+        <p>
+          Centraliza todos os atos normativos e termos da intervenção. Cada ato cadastrado recebe um número de controle
+          gerado automaticamente pelo sistema:
+        </p>
+
+        <div class="alert-box info" style="margin: 14px 0;">
+          <div>
+            <div class="alert-title">Regra do Código de Controle da Lei/Ato (cdControleLeiAto)</div>
+            Ao cadastrar um novo ato, você não precisa inventar um número de controle: o SGI gera esse código de forma automática e sequencial.<br>
+            <strong>Início da Numeração (Base 450900):</strong> A numeração dos atos de obra da Câmara Municipal inicia em <strong>450900</strong> e avança de 1 em 1 (450901, 450902...). Esse número-base corresponde ao início da faixa livre reservada na Atoteca do TCE-PR para as obras da Câmara, garantindo que nenhum ato colida com leis e decretos de outros setores (como compras gerais, licitações de serviços ou folha).
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="manual-table">
+            <thead>
+              <tr>
+                <th>Tipo de Documento</th>
+                <th>Para que serve</th>
+                <th>Exemplo Prático</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>100 - Projeto</strong></td>
+                <td>Ato de aprovação do projeto básico ou executivo da intervenção.</td>
+                <td>Portaria de aprovação do projeto básico</td>
+              </tr>
+              <tr>
+                <td><strong>104 - Orçamento Base / Edital</strong></td>
+                <td>Ato que aprova a planilha de orçamento base da licitação.</td>
+                <td>Despacho de homologação do orçamento de referência</td>
+              </tr>
+              <tr>
+                <td><strong>105 - Planilha Contratada</strong></td>
+                <td>Ato que homologa a planilha de execução indireta do contrato.</td>
+                <td>Termo de homologação do processo licitatório</td>
+              </tr>
+              <tr>
+                <td><strong>106 - Planilha Aditivo</strong></td>
+                <td>Ato legal que aprova a planilha do termo aditivo.</td>
+                <td>Termo Aditivo nº 01/2025</td>
+              </tr>
+              <tr>
+                <td><strong>107 - Ato de Paralisação</strong></td>
+                <td>Documento que determina formalmente a paralisação temporária da obra.</td>
+                <td>Ordem de Paralisação nº 01/2025</td>
+              </tr>
+              <tr>
+                <td><strong>108 - Termo de Recebimento Definitivo</strong></td>
+                <td>Ato de recebimento definitivo e entrega da obra concluída.</td>
+                <td>Termo de Recebimento Definitivo da Obra</td>
+              </tr>
+              <tr>
+                <td><strong>109 - Boletim de Medição</strong></td>
+                <td>Laudo técnico mensal que comprova o avanço físico dos serviços.</td>
+                <td>Boletim de Medição nº 03/2025</td>
+              </tr>
+              <tr>
+                <td><strong>110 - Justificativa / Cancelamento</strong></td>
+                <td>Ato formal de justificativa para cancelamento de obra.</td>
+                <td>Despacho Administrativo de cancelamento</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card" style="margin-top: 14px; background-color: #fafafa;">
+          <div class="card-header">
+            <span class="card-title">Campos Obrigatórios no Cadastro</span>
+          </div>
+          <ul style="margin-left: 22px; margin-top: 8px; font-size: 13px; line-height: 1.8; color: var(--texto-secundario);">
+            <li><strong>Código do Documento na Atoteca:</strong> Código numérico de até 7 dígitos obtido no registro do documento no sistema Atoteca do TCE-PR.</li>
+            <li><strong>Ano Inicial de Aplicação:</strong> Ano com 4 dígitos (ex: 2025) a partir do qual o ato produz efeitos.</li>
+            <li><strong>Número e Ano da Lei/Ato:</strong> Opcionais, porém vinculados (ao preencher o número, o ano torna-se obrigatório).</li>
+            <li><strong>Data do Ato:</strong> Data de expedição do documento (o sistema impede datas futuras por regra do Tribunal).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 7: PLANILHAS & CONTRATOS -->
+    <section id="planilhas" class="manual-section">
+      <h3 class="section-title"><span class="section-number">7</span> Planilhas de Orçamento e Contratos</h3>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Planilha de Orçamento da Obra</span>
+          <span class="screen-tag">Cadastros → Planilhas de Orçamento</span>
+        </div>
+        <p>
+          Armazena o valor global orçado da obra e a data-base de preços:
+        </p>
+        <ul
+          style="margin-left: 22px; margin-top: 8px; font-size: 13.5px; line-height: 1.8; color: var(--texto-secundario);">
+          <li>Selecione a Intervenção e clique em <strong>Adicionar</strong>.</li>
+          <li>Indique o tipo de planilha: <strong>1 - Base</strong>, <strong>2 - Contrato (PEIC)</strong> ou <strong>3 - Aditivo (PEIA)</strong>.</li>
+          <li>Informe a <strong>Data-Base</strong> dos custos e o <strong>Valor Total Orçado</strong>.</li>
+          <li>Selecione o <strong>Responsável Técnico</strong> que elaborou o orçamento (o sistema verifica se ele
+            possui ART de orçamento cadastrada).</li>
+          <li>Vincule o ato legal da Atoteca correspondente.</li>
+        </ul>
+
+        <div class="table-container" style="margin-top: 14px;">
+          <table class="manual-table">
+            <thead>
+              <tr>
+                <th>Tipo de Planilha</th>
+                <th>Finalidade</th>
+                <th>Regras e Validações do TCE-PR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1 - Planilha Base</strong></td>
+                <td>Orçamento inicial estimativo da Câmara.</td>
+                <td>Exige Responsável Técnico com registro de conselho (CREA/CAU/CFT) e ART de elaboração de orçamento vinculada à obra (Regras 1564 e 1729). Não aceita dados de contrato.</td>
+              </tr>
+              <tr>
+                <td><strong>2 - Contrato (PEIC)</strong></td>
+                <td>Orçamento homologado com a empresa contratada por licitação.</td>
+                <td>Exige informar o <strong>Número e Ano do Contrato</strong>. Os boletins de medição das empreiteiras serão vinculados a esta planilha.</td>
+              </tr>
+              <tr>
+                <td><strong>3 - Aditivo (PEIA)</strong></td>
+                <td>Acréscimo, supressão de itens ou prorrogação contratual.</td>
+                <td>Deve ser <strong>obrigatoriamente vinculada a uma Planilha de Contrato (PEIC)</strong> existente, informando o número e ano do Termo Aditivo.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Contratos de Empreitada (Execução Indireta)</span>
+        </div>
+        <p>
+          Nas obras executadas por empresas contratadas:
+        </p>
+        <ul
+          style="margin-left: 22px; margin-top: 8px; font-size: 13.5px; line-height: 1.8; color: var(--texto-secundario);">
+          <li><strong>PEIC (Contrato Inicial):</strong> Registra o contrato firmado na licitação com o valor homologado
+            e prazo de vigência original.</li>
+          <li><strong>PEIA (Aditivos Contratuais):</strong> Registra os aditivos contratuais de acréscimo de valor,
+            supressão de itens ou prorrogação de prazo.</li>
+          <li>No lançamento das medições mensais, você apontará a qual contrato ou aditivo aquela medição pertence.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 8: MATRÍCULA INSS (CNO & CND) -->
+    <section id="matricula-inss" class="manual-section">
+      <h3 class="section-title"><span class="section-number">8</span> Matrículas INSS da Obra (CNO / CEI & CNDs)</h3>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Regularidade Previdenciária da Obra</span>
+          <span class="screen-tag">Cadastros → Matrículas INSS</span>
+        </div>
+        <p>
+          Toda obra de engenharia possui um número de CNO (Cadastro Nacional de Obras) junto à Receita Federal e deve
+          comprovar sua regularidade previdenciária através de Certidões Negativas de Débito (CND):
+        </p>
+        <ul
+          style="margin-left: 22px; margin-top: 10px; font-size: 13.5px; line-height: 1.8; color: var(--texto-secundario);">
+          <li><strong>Cadastrar Matrícula:</strong> Informe o número de 12 dígitos da matrícula CNO/CEI e a data de
+            inscrição.</li>
+          <li><strong>Adicionar CND:</strong> Selecione a matrícula na lista e clique em <strong>CNDs...</strong> para
+            cadastrar o número da certidão, data de emissão e data de validade.</li>
+        </ul>
+
+        <div class="alert-box warning">
+          <div>
+            <div class="alert-title">Regra Importante do TCE-PR</div>
+            Uma matrícula que já possui certidões (CND) cadastradas <strong>não pode ser cancelada</strong>. Caso uma
+            matrícula tenha sido cancelada formalmente, o sistema impede a inclusão de novas CNDs nela.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 9: ACOMPANHAMENTO MENSAL -->
+    <section id="acompanhamento" class="manual-section">
+      <h3 class="section-title"><span class="section-number">9</span> Acompanhamento Mensal, Medições e Conclusão</h3>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Linha do Tempo da Obra</span>
+          <span class="screen-tag">Cadastros → Acompanhamentos</span>
+        </div>
+        <p>
+          Este é o módulo principal do dia a dia da obra. Nele é registrada cronologicamente cada etapa da execução
+          física:
+        </p>
+
+        <div class="table-container">
+          <table class="manual-table">
+            <thead>
+              <tr>
+                <th>Tipo de Evento</th>
+                <th>Quando Lançar</th>
+                <th>Dados Obrigatórios</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="rule-badge">1 - Medição</span></td>
+                <td>Mensalmente, conforme avanço dos serviços.</td>
+                <td>Data, Percentual Físico Medido (0% a 100%), Engenheiro Responsável e Boletim de Medição anexado.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="rule-badge">2 - Paralisação</span></td>
+                <td>Quando os serviços forem temporariamente suspensos.</td>
+                <td>Data da paralisação, Motivo técnico e Ato legal formal de paralisação.</td>
+              </tr>
+              <tr>
+                <td><span class="rule-badge">3 - Conclusão</span></td>
+                <td>Quando a obra for finalizada em 100%.</td>
+                <td>Data de conclusão, 100% físico e Termo de Recebimento Definitivo anexado.</td>
+              </tr>
+              <tr>
+                <td><span class="rule-badge">4 - Rescisão</span></td>
+                <td>Quando o contrato de obra for rescindido antes do fim.</td>
+                <td>Data da rescisão e Ato administrativo de rescisão contratual.</td>
+              </tr>
+              <tr>
+                <td><span class="rule-badge">5 - Término de Vigência</span></td>
+                <td>Quando o prazo da vigência se encerrar sem prorrogação.</td>
+                <td>Data de encerramento contratual.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="alert-box info">
+          <div>
+            <div class="alert-title">Como Corrigir ou Excluir uma Medição</div>
+            <strong>Editar:</strong> Você pode clicar em <strong>Editar</strong> ou <strong>Documentos...</strong> em
+            qualquer linha para corrigir percentuais ou trocar documentos informados incorretamente.<br>
+            <strong>Excluir:</strong> Por regra de consistência do Tribunal, o botão <strong>Excluir</strong> só fica
+            liberado para o <em>último</em> acompanhamento registrado, para evitar buracos na linha do tempo.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 10: GERADOR SIM-AM OBRAS (TCE-PR) -->
+    <section id="gerador-simam" class="manual-section">
+      <h3 class="section-title"><span class="section-number">10</span> Prestação de Contas Mensal — Gerador SIM-AM Obras</h3>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Transmissão Oficial ao Tribunal de Contas do Paraná</span>
+          <span class="screen-tag">Utilitários → Gerar SIM-AM Obras</span>
+        </div>
+        <p>
+          O SGI conta com um módulo completo e integrado para a geração da remessa eletrônica mensal de obras exigida pelo <strong>SIM-AM (Sistema de Informações Municipais - Acompanhamento Mensal)</strong> do TCE-PR.
+        </p>
+
+        <div class="steps-list" style="margin-top: 16px;">
+          <div class="step-item">
+            <div class="step-circle">1</div>
+            <div class="step-content">
+              <h4>Selecionar o Ano e a Competência (Mês)</h4>
+              <p>Acesse <strong>Utilitários → Gerar SIM-AM Obras</strong>. Escolha o <strong>Ano</strong> e o <strong>Mês</strong> de referência que deseja prestar contas (ex: Ano 2026, Mês 08 - Agosto).</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">2</div>
+            <div class="step-content">
+              <h4>Executar a Pré-Conferência de Consistência</h4>
+              <p>O sistema audita automaticamente as regras de consistência do Tribunal antes de gerar os arquivos. Se houver alguma pendência (ex: obra sem medição no mês, engenheiro sem registro de conselho ou falta de número de contrato), o sistema emite um relatório preventivo detalhado apontando exatamente onde regularizar os dados antes da transmissão. A geração é <strong>bloqueada</strong> quando uma obra iniciada no mês está sem vínculo de ação do PPA ou de bem patrimonial. Acompanhamento do mês sem documento relacionado gera um <strong>aviso</strong> (não bloqueia): ele segue no arquivo de acompanhamentos, mas nada sai para ele no arquivo DocumentoAcompanhamento. As pendências aparecem numa lista, com os itens que <strong>bloqueiam</strong> a geração separados dos <strong>avisos</strong>, e um botão para copiar a lista inteira.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-circle">3</div>
+            <div class="step-content">
+              <h4>Geração dos Arquivos de Obras e Pacote ZIP</h4>
+              <p>Ao clicar em <strong>Gerar Remessa</strong>, o SGI gera os arquivos de texto (.txt) padronizados e compacta tudo automaticamente em um arquivo <strong>.zip</strong> (ex: <code>SIMAM_OBRAS_2026_08.zip</code>), pronto para upload direto no validador do Tribunal de Contas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-container" style="margin-top: 14px;">
+          <table class="manual-table">
+            <thead>
+              <tr>
+                <th>Arquivo Gerado</th>
+                <th>Conteúdo Informado na Competência</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>intervencao.txt</code></td>
+                <td>Dados cadastrais das intervenções iniciadas na competência.</td>
+              </tr>
+              <tr>
+                <td><code>planilhaorcamento.txt</code></td>
+                <td>Planilhas base, orçamentos contratuais e aditivos homologados no mês.</td>
+              </tr>
+              <tr>
+                <td><code>acompanhamento.txt</code></td>
+                <td>Linha do tempo física: medições, paralisações e conclusões ocorridas no mês.</td>
+              </tr>
+              <tr>
+                <td><code>medicao.txt</code> e <code>execucaoindiretacontrato.txt</code></td>
+                <td>Valores financeiros medidos e percentuais executados por contrato e aditivo.</td>
+              </tr>
+              <tr>
+                <td><code>matriculainss.txt</code> e <code>cndobra.txt</code></td>
+                <td>Inscrições CNO e certidões negativas de débito emitidas no período.</td>
+              </tr>
+              <tr>
+                <td><code>documentoacompanhamento.txt</code></td>
+                <td>Vínculo entre as medições e seus laudos/boletins na Atoteca.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="alert-box success" style="margin-top: 14px;">
+          <div>
+            <div class="alert-title">Segurança na Prestação de Contas</div>
+            Os arquivos são gerados exatamente no formato exigido pelo TCE-PR (codificação Windows-1252, campos delimitados por barra vertical <code>|</code>, sem acentos ou caracteres especiais), garantindo 100% de conformidade técnica com o validador oficial.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 11: REGRAS E BLOQUEIOS TCE-PR -->
+    <section id="regras-bloqueios" class="manual-section">
+      <h3 class="section-title"><span class="section-number">11</span> Entendendo as Mensagens e Validações do Sistema
+      </h3>
+
+      <div class="card">
+        <p style="font-size: 13.5px; color: var(--texto-secundario); margin-bottom: 14px;">
+          Se o sistema exibir uma mensagem de aviso ou bloquear a gravação de algum registro, verifique a tabela abaixo
+          para saber exatamente como regularizar a situação:
+        </p>
+
+        <div class="table-container">
+          <table class="manual-table">
+            <thead>
+              <tr>
+                <th style="width: 320px;">Mensagem / Situação</th>
+                <th>Motivo da Validação</th>
+                <th>Como Resolver</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><em>"O responsável pela medição precisa ter registro em CREA, CAU, CTF ou CFTA."</em></td>
+                <td>Exigência legal do TCE-PR para laudos de engenharia (Regra 1598).</td>
+                <td>Acesse <strong>Cadastros → Pessoas</strong>, edite a pessoa e adicione o número do conselho com a UF
+                  na aba <em>Outros Documentos</em>.</td>
+              </tr>
+              <tr>
+                <td><em>"O elaborador da planilha deve possuir ART/RRT de orçamento vinculada à obra."</em></td>
+                <td>O profissional precisa estar formalmente registrado como RT daquela obra (Regra 1729).</td>
+                <td>Vá em <strong>Cadastros → Responsáveis Técnicos</strong> e vincule a ART do profissional com a opção
+                  de Orçamento selecionada.</td>
+              </tr>
+              <tr>
+                <td><em>"Data do acompanhamento não pode ser anterior ao registro anterior."</em></td>
+                <td>A cronologia de medições não pode retroceder no tempo (Regras 1601 e 1603).</td>
+                <td>Informe uma data igual ou posterior à última medição realizada na obra.</td>
+              </tr>
+              <tr>
+                <td><em>"O percentual físico deve estar entre 0 e 100%."</em></td>
+                <td>Validação de limites de medição física da obra (Regra 1619).</td>
+                <td>Informe o percentual acumulado executado até a data da medição.</td>
+              </tr>
+              <tr>
+                <td><em>"Não é permitido excluir acompanhamento que não seja o último."</em></td>
+                <td>Proteção contra furos na numeração de remessas ao TCE (Regra 1611).</td>
+                <td>Se precisar corrigir um registro intermediário, use o botão <strong>Editar</strong> em vez de
+                  excluir.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 12: DÚVIDAS FREQUENTES (FAQ) -->
+    <section id="faq" class="manual-section">
+      <h3 class="section-title"><span class="section-number">12</span> Dúvidas Frequentes da Operação (FAQ)</h3>
+
+      <div class="card">
+        <div class="faq-item">
+          <div class="faq-question">
+            ❓ O que é o idPessoa e onde são configurados os dados da Câmara?
+          </div>
+          <div class="faq-answer">
+            O <code>idPessoa</code> é o código oficial de identificação da Câmara Municipal junto ao Tribunal de Contas (TCE-PR). Ele é configurado no menu <strong>Utilitários → Dados da Entidade</strong> (exclusivo para administradores), juntamente com a Razão Social, o CNPJ da Câmara, o idPessoa da Prefeitura (origem das ações do PPA) e o número-base da Atoteca (<code>450900</code>). Esses parâmetros garantem que todas as remessas mensais de obras sejam devidamente reconhecidas pelo validador do Tribunal.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ❓ O que é o Código de Controle da Lei/Ato e por que ele começa em 450900?
+          </div>
+          <div class="faq-answer">
+            O <code>cdControleLeiAto</code> é o código sequencial único que identifica cada ato legal no TCE-PR. O número <strong>450900</strong> foi definido como o ponto de partida oficial porque representa o início da faixa livre na Atoteca da Câmara Municipal de Assis Chateaubriand reservada para o setor de obras, garantindo que os atos de engenharia avancem de 1 em 1 sem colidir com leis ou decretos de outros setores (licitações gerais, folha, etc.).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ❓ O que fazer se a pré-conferência do SIM-AM apontar inconsistências?
+          </div>
+          <div class="faq-answer">
+            A pré-conferência do SGI funciona como um filtro preventivo para evitar que a Câmara envie dados com erro ao Tribunal. O relatório apontará exatamente o que está faltando (ex: preencher a matrícula CNO da obra, anexar o laudo de medição ou cadastrar o registro de conselho do engenheiro). Basta abrir a tela indicada, regularizar a pendência e rodar a pré-conferência novamente.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ❓ Como é feita a configuração de conexão da minha estação de trabalho?
+          </div>
+          <div class="faq-answer">
+            A configuração do banco de dados é feita uma única vez na instalação pelo suporte técnico ou administrador
+            do sistema. Você não precisa editar arquivos nem configurar endereços de servidor manualmente. Os parâmetros
+            de conexão ficam salvos de forma protegida no seu computador através da segurança nativa do Windows.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ❓ Não recebi o código de 6 dígitos no meu e-mail durante o login. O que fazer?
+          </div>
+          <div class="faq-answer">
+            Verifique primeiro a pasta de <em>Spam / Lixo Eletrônico</em> do seu e-mail funcional. Caso o e-mail não
+            tenha chegado em 2 minutos, solicite o reenvio na tela. Se o problema persistir, confirme com o
+            administrador do sistema no menu <strong>Utilitários → Usuários</strong> se o seu e-mail funcional está
+            preenchido corretamente.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ❓ O sistema travou ou a tela demorou para carregar. O que pode ser?
+          </div>
+          <div class="faq-answer">
+            O SGI possui monitoramento automático de velocidade de rede. Se a rede interna ou a conexão com o servidor
+            estiver instável, o sistema aguarda até concluir a operação com segurança. Em caso de queda de rede, o
+            sistema não perde dados não salvos se a tela de cadastro ainda estiver aberta.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ❓ Posso abrir o sistema duas vezes no mesmo computador?
+          </div>
+          <div class="faq-answer">
+            Não. O SGI possui proteção de sessão única para evitar conflito de digitação concorrente ou salvamentos
+            sobrepostos. Se você já estiver com o sistema aberto em segundo plano, basta restaurar a janela existente na
+            barra de tarefas do Windows.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            ❓ Como cadastrar um novo usuário para outro servidor da Câmara?
+          </div>
+          <div class="faq-answer">
+            Usuários com permissão de administrador podem acessar <strong>Utilitários → Usuários</strong>, clicar em
+            <strong>Adicionar</strong>, preencher o nome completo, login, e-mail funcional e definir a senha inicial e o
+            nível de acesso.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPÉ DO MANUAL -->
+    <footer class="manual-footer">
+      <p><strong>SGI — Sistema de Gestão de Intervenções e Obras Públicas</strong></p>
+      <p>Câmara Municipal de Assis Chateaubriand — Estado do Paraná</p>
+      <p>Desenvolvido para conformidade técnica e operacional com o Tribunal de Contas do Estado do Paraná (TCE-PR)</p>
+    </footer>
+
+  </div>
+
+  <!-- BOTÃO FLUTUANTE VOLTAR AO TOPO -->
+  <button id="backToTopBtn" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    title="Voltar ao início">
+    <svg viewBox="0 0 16 16">
+      <path
+        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+    </svg>
+    <span>Topo</span>
+  </button>
+
+  <!-- ========================================================================
+       SCRIPTS INTERATIVOS: SCROLLSPY, BUSCA E ROLAGEM SUAVE
+       ======================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.manual-section');
+      const navPills = document.querySelectorAll('.subnav-pill');
+      const headerContainer = document.querySelector('.sticky-header-container');
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      const searchInput = document.getElementById('manualSearch');
+
+      // 1. ROLAGEM SUAVE COM OFFSET EXATO AO CLICAR EM UM TÓPICO
+      navPills.forEach(pill => {
+        pill.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').replace('#', '');
+          const targetSection = document.getElementById(targetId);
+
+          if (targetSection) {
+            const headerHeight = headerContainer ? headerContainer.offsetHeight : 140;
+            const targetPos = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight - 14;
+
+            window.scrollTo({
+              top: targetPos,
+              behavior: 'smooth'
+            });
+
+            // Atualiza de imediato a classe ativa
+            navPills.forEach(p => p.classList.remove('active'));
+            this.classList.add('active');
+          }
+        });
+      });
+
+      // 2. SCROLLSPY DINÂMICO (ATUALIZA O TÓPICO ATIVO AO ROLAR A PÁGINA)
+      function updateScrollSpy() {
+        const headerHeight = headerContainer ? headerContainer.offsetHeight : 140;
+        const scrollPosition = window.pageYOffset + headerHeight + 50;
+
+        let activeId = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            activeId = section.getAttribute('id');
+          }
+        });
+
+        // Se estiver no final da página, ativa o último tópico
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 60) {
+          if (sections.length > 0) {
+            activeId = sections[sections.length - 1].getAttribute('id');
+          }
+        }
+
+        if (activeId) {
+          navPills.forEach(pill => {
+            const pillTarget = pill.getAttribute('href').replace('#', '');
+            if (pillTarget === activeId) {
+              pill.classList.add('active');
+            } else {
+              pill.classList.remove('active');
+            }
+          });
+        }
+
+        // Exibe/oculta botão "Voltar ao Topo"
+        if (window.pageYOffset > 300) {
+          backToTopBtn.style.display = 'inline-flex';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+      }
+
+      window.addEventListener('scroll', updateScrollSpy, { passive: true });
+      updateScrollSpy();
+
+      // 3. BUSCA EM TEMPO REAL NO MANUAL
+      const cards = document.querySelectorAll('.card, .hero-banner');
+      searchInput.addEventListener('input', (e) => {
+        const termo = e.target.value.toLowerCase().trim();
+
+        cards.forEach(card => {
+          const texto = card.textContent.toLowerCase();
+          if (termo === '' || texto.includes(termo)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
