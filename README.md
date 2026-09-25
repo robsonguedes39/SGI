@@ -7,6 +7,31 @@ mensal **SIM-AM Obras** enviada ao TCE-PR (Tribunal de Contas do Estado do
 Paraná). Este repositório traz apenas o **instalador pronto** e as
 instruções de instalação/configuração — o código-fonte não está aqui.
 
+## O que o sistema faz
+
+O SGI acompanha uma obra pública do início ao fim e produz, todo mês, o
+arquivo de prestação de contas que a Câmara envia ao TCE-PR. Na prática,
+cobre:
+
+- **Login com segundo fator (2FA)** e trava de sessão única por usuário.
+- **Cadastro da obra (intervenção)**: dados básicos, classificação e
+  tipo, conforme o leiaute do TCE-PR.
+- **Pessoas e Responsáveis Técnicos**: quem assina a obra (ART/RRT),
+  com os documentos de conselho de classe.
+- **Leis e atos autorizativos** (Atoteca): os atos que amparam legalmente
+  a obra.
+- **Planilhas de orçamento e contratos**: valor base, aditivos, execução
+  direta ou indireta.
+- **Matrícula no INSS** (CNO/CEI) e as CNDs associadas.
+- **Acompanhamento mensal**: medições, paralisações e conclusão da obra.
+- **Geração da remessa SIM-AM Obras**: monta os arquivos exigidos pelo
+  TCE-PR, com uma conferência prévia que aponta inconsistência antes de
+  gerar o `.zip` final.
+
+O [manual do usuário completo](manual/manual-do-sistema.html) — o mesmo
+que roda dentro do sistema, aba "Manual do Sistema" — está neste
+repositório; baixe o arquivo e abra no navegador.
+
 ## Requisitos
 
 - Windows 10 ou 11 (64 bits).
